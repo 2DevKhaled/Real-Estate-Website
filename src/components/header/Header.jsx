@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
-import { LuMousePointerClick } from "react-icons/lu";
+import { LuMousePointerClick } from "react-icons/lu"; 
 const navItems = [
   { href: "#home", label: "Home", key: 1 },
   { href: "#about", label: "About", key: 2 },
@@ -26,7 +26,7 @@ export default function Header() {
       <div className="max-w-screen-2xl mx-auto py-4 px-5 flex justify-between items-center">
         {/* LOGO */}
         <a href="/">
-          <img src="/public/logo.png" alt="" className="w-28" />
+          <img src="/logo.png" alt="" className="w-28" />
         </a>
         <div className="lg:hidden">
           <button onClick={toggleMenu}>
