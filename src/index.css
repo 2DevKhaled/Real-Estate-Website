@@ -3,9 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    background: #000; 
+    
     color: black;
 }
 html{
+    color:black;
     scroll-behavior: smooth;
 }

@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const ButtonPrimary = ({ href, target = "", label, icon, classes }) => {
   if (href) {
     return (
-      <a  href={href} target={target} className={"btn btn-primary " + classes}>
+      <a  href={href} target={target} className={"btn  bg-[#FF5B28]" + classes}>
         {label}
         {icon ? (
           <span className="material-symbols-rounded">{icon}</span>
@@ -16,7 +16,7 @@ const ButtonPrimary = ({ href, target = "", label, icon, classes }) => {
     );
   } else {
     return (
-      <button className={"btn btn-primary " + classes}>
+      <button className={"btn  bg-[#FF5B28] " + classes}>
         {" "}
         {label}
         {icon ? (

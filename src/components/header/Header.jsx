@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
+import { LuMousePointerClick } from "react-icons/lu";
 const navItems = [
   { href: "#home", label: "Home", key: 1 },
   { href: "#about", label: "About", key: 2 },
@@ -20,7 +21,8 @@ export default function Header() {
   ? "text-[#FF5B28] font-bold hover:text-[#FF5B28] duration-200"
   : "text-[#000000] font-semibold hover:text-[#FF5B28] duration-200")
   return (
-    <div className="bg-transparent sticky top-0 left-0 right-0 z-[999999] absolute">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+
       <div className="max-w-screen-2xl mx-auto py-4 px-5 flex justify-between items-center">
         {/* LOGO */}
         <a href="/">
@@ -55,12 +57,12 @@ export default function Header() {
         </div>
         {/* Contact Us Button */}
         <div className="hidden lg:block">
-          <button className="text-[#0f0e0e]  font-semibold bg-[#FF5B28] border-transparent border-2 rounded-lg px-4 py-2">
+          <button className="text-white  font-semibold bg-zinc-900 border-transparent border-2 rounded-lg px-4 py-2">
             <a href="#contact" className="flex items-center gap-2">
               Contact Us{" "}
               <span>
                 {" "}
-                <img src="/src/assets/arrow.png" alt="" />
+                <LuMousePointerClick/>
               </span>
             </a>
           </button>
@@ -90,6 +92,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </div>
+    </header>
   );
 }
